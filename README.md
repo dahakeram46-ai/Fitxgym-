@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FITX GYM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Oswald',sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.8);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+color:#FFD000;
+letter-spacing:3px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+background:url("gym.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-box{
+background:rgba(0,0,0,0.7);
+padding:50px;
+border:3px solid #FFD000;
+}
+
+.hero h1{
+font-size:70px;
+color:#FFD000;
+}
+
+.hero p{
+font-size:25px;
+margin-top:10px;
+}
+
+/* ABOUT */
+
+.about{
+padding:120px 40px;
+background:#111;
+text-align:center;
+}
+
+.about-box{
+max-width:700px;
+margin:auto;
+background:#000;
+padding:40px;
+border-left:6px solid #FFD000;
+}
+
+/* MEMBERSHIP */
+
+.membership{
+padding:120px 40px;
+text-align:center;
+background:url("gym2.jpg") center/cover no-repeat;
+}
+
+.plan{
+background:rgba(0,0,0,0.8);
+border:2px solid #FFD000;
+padding:30px;
+margin:15px auto;
+max-width:400px;
+font-size:25px;
+}
+
+/* FEATURES */
+
+.features{
+padding:120px 40px;
+background:#000;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:900px;
+margin:auto;
+}
+
+.box{
+background:#111;
+padding:30px;
+border:2px solid #FFD000;
+text-align:center;
+font-size:20px;
+}
+
+/* GALLERY SLIDER */
+
+.gallery{
+padding:120px 40px;
+background:#111;
+text-align:center;
+}
+
+.slider{
+max-width:900px;
+margin:auto;
+overflow:hidden;
+}
+
+.slides{
+display:flex;
+animation:slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+border:3px solid #FFD000;
+}
+
+@keyframes slide{
+
+0%{transform:translateX(0);}
+33%{transform:translateX(-100%);}
+66%{transform:translateX(-200%);}
+100%{transform:translateX(0);}
+
+}
+
+/* CONTACT */
+
+.contact{
+padding:120px 40px;
+text-align:center;
+background:#000;
+}
+
+.contact-box{
+background:#111;
+padding:40px;
+border:2px solid #FFD000;
+max-width:500px;
+margin:auto;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">FITX GYM</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#membership">Membership</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-box">
+<h1>FITX GYM</h1>
+<p>Transform Your Body. Unlock Your Power.</p>
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<div class="about-box">
+
+<h2>ABOUT OUR GYM</h2>
+
+<p>
+FITX Gym is a modern fitness center located near Bus Stand,
+Malkapur, Dist-Buldhana. Our gym provides modern machines,
+a motivating environment and everything needed to build
+strength and transform your body.
+</p>
+
+</div>
+
+</section>
+
+<section class="membership" id="membership">
+
+<h2>MEMBERSHIP PLANS</h2>
+
+<div class="plan">
+₹10,000 – Yearly Membership
+</div>
+
+<div class="plan">
+₹3,000 – 3 Months Membership
+</div>
+
+</section>
+
+<section class="features" id="features">
+
+<h2 style="text-align:center;margin-bottom:40px;">GYM FEATURES</h2>
+
+<div class="grid">
+
+<div class="box">Modern Equipment</div>
+<div class="box">Strength Training</div>
+<div class="box">Weight Training</div>
+<div class="box">Cardio Machines</div>
+<div class="box">Clean Environment</div>
+<div class="box">Motivating Atmosphere</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2>GYM GALLERY</h2>
+
+<div class="slider">
+
+<div class="slides">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="contact-box">
+
+<h2>CONTACT US</h2>
+
+<p>
+FITX GYM<br>
+Near Bus Stand, ___ Complex<br>
+Malkapur, Dist-Buldhana
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© FITX GYM
+</footer>
+
+</body>
+</html>
